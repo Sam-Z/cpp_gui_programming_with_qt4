@@ -7,8 +7,10 @@ int main(int argc, char *argv[])
    
     QWidget *window = new QWidget;
 
-    Ui::Form *ui = new Ui::Form(window);
+    Ui::Form ui;
 
+    ui.setupUi(window); 
+    
     window->show();
 
     return(app.exec());
